@@ -2,11 +2,11 @@
  * @Author: wangyangtao@xdf.cn
  * @Date: 2022-04-13 16:56:52
  * @LastEditors: wangyangtao@xdf.cnn
- * @LastEditTime: 2022-04-13 18:43:36
+ * @LastEditTime: 2022-04-13 19:53:05
  * @Description: 描述信息
  */
 import React from 'react';
-import './test.css'
+import './index.css'
 import PropTypes from 'prop-types';
 
 
