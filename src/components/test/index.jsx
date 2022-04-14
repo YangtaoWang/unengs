@@ -2,7 +2,7 @@
  * @Author: wangyangtao@xdf.cn
  * @Date: 2022-04-13 16:56:52
  * @LastEditors: wangyangtao@xdf.cnn
- * @LastEditTime: 2022-04-13 20:06:37
+ * @LastEditTime: 2022-04-14 14:32:50
  * @Description: 描述信息
  */
 import React from 'react';
@@ -20,7 +20,7 @@ TextView.propTypes = {
     /**
      * Is this the principal call to action on the page?
      */
-     children: PropTypes.string
+     children: PropTypes.object
 };
 
 export default TextView;
