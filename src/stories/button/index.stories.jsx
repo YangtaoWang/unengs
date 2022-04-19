@@ -1,6 +1,7 @@
 import React from 'react';
 
-import Button from './index';
+import { Button } from '../../components';
+import '../../components/button/style';
 
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 export default {

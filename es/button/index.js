@@ -15,8 +15,6 @@ var _react = _interopRequireDefault(require("react"));
 
 var _propTypes = _interopRequireDefault(require("prop-types"));
 
-require("./style/index");
-
 var _excluded = ["primary", "backgroundColor", "size", "label"];
 
 /**

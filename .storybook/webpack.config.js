@@ -2,7 +2,7 @@
  * @Author: wangyangtao@xdf.cn
  * @Date: 2022-04-13 20:31:00
  * @LastEditors: wangyangtao@xdf.cnn
- * @LastEditTime: 2022-04-13 20:31:00
+ * @LastEditTime: 2022-04-19 13:12:01
  * @Description: 描述信息
  */
 const path = require('path');
@@ -20,20 +20,26 @@ module.exports = {
         exclude: [ path.resolve(__dirname, 'node_modules') ],
         use: ['babel-loader', 'eslint-loader']
       }, { // 样式文件打包
-        test: /\.(css|scss)$/,
+        test: /\.css$/,
         use: [
-          'style-loader', {
+          {
             loader: 'css-loader',
             options: {
-              sourceMap: false,
+              sourceMap: false
             }
           }, {
             loader: 'postcss-loader',
             options: { javascriptEnabled: true, sourceMap: false },
-          }, {
-            loader: 'sass-loader'
           }
         ],
+      }, {
+        test: /\.scss$/,
+        use: [{
+          loader: 'css-loader',
+          options: {
+            importLoaders: 1,
+          }
+        }, 'sass-loader']
       }, { // 文字图片打包
         test: /\.(png|jpg|gif|woff|svg|eot|ttf)$/,
         use: [{
